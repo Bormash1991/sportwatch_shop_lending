@@ -1,0 +1,167 @@
+@media (max-width: 992px){
+.header {
+    margin: 0 auto;
+    width: 92%;
+}
+.promo{
+    &__wrapper{
+        width: 96%;
+    }
+}
+.title {
+        font-size: 28px;
+    }
+.goal {
+    
+    &__descr {
+        margin: 0 auto;
+        margin-top: 62px;
+        width: 92%;
+    }
+    &__content {
+        width: 208px;
+        font-size: 12px;
+        span {
+            font-size: 17px;
+        }
+    }
+}
+.consultation {
+    .title_left {
+        font-size: 32px;
+        margin-left: 25px
+        
+    }
+    &__descr {
+        margin-left: 25px;
+        margin-top: 76px;
+        font-size: 18px;
+    }
+    .feed-form {
+        margin-left: 25px;
+    }
+}
+}
+@media (max-width: 768px){
+.official_active{
+    display: none;
+} 
+.promo {
+    &__wrapper {
+        align-items: center;
+        width: 100%;
+    }
+}
+.title {
+        font-size: 26px;
+    }
+.goal{
+    
+    &__descr {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__content {
+        padding: 17px;
+        border: 1px solid #c0c0c078;
+        width: 290px;
+        margin-bottom: 25px;
+        font-size: 14px;
+        span {
+            font-size: 19px;
+        }
+    }
+    &__content__nbm {
+        margin-bottom: 0;
+    }
+}
+.carousel {
+    &__inner {
+        width: 577px;
+        div {
+            width: 577px;
+        }
+        img {
+            width: 577px;
+        }
+    }
+    ul {
+        width: 577px;
+    }
+}
+}
+
+@media (max-width: 576px){
+.header {
+    &__logo {
+        width: 55%;
+    }
+    &__phone {
+        font-size: 14px;
+    }
+    button {
+        line-height: 30px;
+        width: 120px;
+        font-size: 9px;
+    }
+}
+.iconns__active {
+    display: none;
+}
+.promo {
+    min-height: 555px;
+    padding-bottom: 45px;
+    &__wrapper {
+        text-align: center;
+    }
+    &__header {
+        font-size: 34px;
+    }
+    &__subheader {
+        font-size: 19px;
+    }
+}
+.title {
+        font-size: 23px;
+    }
+.goal {
+    
+    &__content {
+        width: 270px;
+    }
+}
+.consultation {
+    .feed-form{
+        width: 281px;
+        margin: 0 auto;
+        margin-top: 36px;
+    }
+    .title_left {
+        font-size: 28px;
+        text-align: center;
+        margin: 0;
+    }
+    &__descr {
+        margin: 0 10px; 
+        margin-top: 75px;
+        text-align: center;
+        font-size: 17px
+    }
+}
+.carousel {
+    &__inner {
+        width: 98%;
+        div {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    ul {
+        width: 100%;
+    }
+    
+}
+}
