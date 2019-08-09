@@ -1,6 +1,7 @@
 @import 'variables';
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
+    box-sizing: border-box;
 }
     
 
@@ -14,10 +15,11 @@
 @import 'header';
 @import 'buttons';
 @import 'goal';
-
-
 @import 'title';
 @import 'consultation';
 @import 'forms';
 @import 'carousel';
+@import 'catalog';
+@import 'comment';
+@import 'footer';
 @import 'media';

@@ -41,6 +41,36 @@
         margin-left: 25px;
     }
 }
+.catalog {
+    &__tabs{
+        padding: 0 20px;
+        margin-top: 60px;
+    }
+    &__content {
+        justify-content: center;
+    }
+}
+.comment {
+    &__block {
+        align-items: center;
+        &_descr {
+            flex-direction: column;
+            img {
+                margin: 0 auto;
+            }
+        }
+        &_title {
+            text-align: center;
+            margin-top: 20px;
+        }
+        &_text {
+            text-align: center;
+            span {
+                text-align: center;
+            }
+        }
+    }
+}
 }
 @media (max-width: 768px){
 .official_active{
@@ -78,19 +108,103 @@
 }
 .carousel {
     &__inner {
-        width: 577px;
+        width: 98%;
         div {
-            width: 577px;
+            width: 100%;
         }
         img {
-            width: 577px;
+            width: 100%;
         }
     }
     ul {
-        width: 577px;
+        width: 100%;
     }
 }
+.catalog {
+    .title {
+        font-size: 21px;
+    }
+    &__tabs{
+        padding: 0 20px;
+        margin-top: 60px;
+    }
+    &__tab {
+        min-width: 172px;
+        font-size: 17px;
+    
+        &:hover {
+            box-shadow: none;
+        }
+       
+    }
+    &__content {
+        justify-content: center;
+    }
+    &-item {
+        margin: 0 10px;
+        margin-bottom: 20px;
+        &__wrapper {
+            position: relative;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+   
+        &__content {
+            width: 100%;
+            transform: none;
+            background-color: white;
+            &_active {
+                transform: none;
+                margin: 0;
+                z-index: 10;
+            }
+        }
+        &__list {
+            position: absolute;
+            width: 100%;
+            min-height: 340px;
+            margin: 0;
+            padding: 0;
+            padding-left: 19px;
+            margin-bottom: 0;
+            transform: none;
+            background-color: white;
+            &_active {
+                transform: none;
+                margin: 0;
+                z-index: 11;
+            }
+        }
+        &__block {
+            transform: translateX(calc(-50% - 10px));
+        }
+    }
 }
+.comment {
+    &__block {
+        align-items: center;
+        &_descr {
+            flex-direction: column;
+            img {
+                margin: 0 auto;
+            }
+        }
+        &_title {
+            text-align: center;
+            margin-top: 20px;
+        }
+        &_text {
+            width: 100%;
+            text-align: center;
+            span {
+                text-align: center;
+            }
+        }
+    }
+}
+
+}
+
 
 @media (max-width: 576px){
 .header {
@@ -163,5 +277,71 @@
         width: 100%;
     }
     
+}
+.catalog {
+    .title {
+        font-size: 21px;
+    }
+    &__tabs{
+        padding: 0 20px;
+        margin-top: 60px;
+    }
+    &__tab {
+        min-width: 86px;
+        font-size: 9px;
+        &:hover {
+            box-shadow: none;
+        }
+       
+    }
+    &__content {
+        justify-content: center;
+    }
+    &-item {
+        &__wrapper {
+            position: relative;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+   
+        &__content {
+            width: 100%;
+            transform: none;
+            background-color: white;
+            &_active {
+                transform: none;
+                margin: 0;
+                z-index: 10;
+            }
+        }
+        &__list {
+            position: absolute;
+            width: 100%;
+            min-height: 340px;
+            margin: 0;
+            padding: 0;
+            padding-left: 19px;
+            margin-bottom: 0;
+            transform: none;
+            background-color: white;
+            &_active {
+                transform: none;
+                margin: 0;
+                z-index: 11;
+            }
+        }
+        &__block {
+            transform: translateX(calc(-50% - 10px));
+        }
+    }
+}
+.comment {
+    &__block {
+        &_text {
+            width: 96%;
+            margin: 0 auto;
+            font-size: 15px;
+        }
+    }
 }
 }
