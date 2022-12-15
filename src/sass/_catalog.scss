@@ -39,7 +39,8 @@
         width: 100%;
         margin-top: 60px;
         display: none;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 28px;
         flex-wrap: wrap;
         &_active {
             display: flex;
